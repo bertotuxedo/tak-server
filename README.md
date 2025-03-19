@@ -105,6 +105,24 @@ You should copy your downloaded **TAKSERVER-DOCKER-X.X-RELEASE** ZIP file to the
 cp ~/Downloads/takserver-docker-5.3.RELEASE-24.zip .
 ```
 
+```
+nano docker-compose.yml
+```
+Add new port
+
+"XXXX:XXXX/udp"
+
+```
+nano scripts/setup.sh
+```
+
+add port next to other ports under ### Check if required ports are in use by anything other than docker
+
+```
+XXXX
+```
+
+
 Assuming that your current working directory is the `tak-server` as cloned previously, you can then proceed to run the [setup.sh script](./scripts/setup.sh).
 
 ```bash
@@ -127,6 +145,7 @@ TAK server needs the following port numbers to operate. Services already using t
 - `8446`
 - `9000`
 - `9001`
+- `8055`
 
 If you are going to expose these ports be careful. Not all of them run secure protocols. For peace of mind, and for working through firewalls and NAT routers run this on a VPN like OpenVPN or NordVPN.
 
