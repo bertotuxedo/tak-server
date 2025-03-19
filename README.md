@@ -100,6 +100,11 @@ The script will auto-detect your architecture and use the ARM Docker file if the
 
 You should copy your downloaded **TAKSERVER-DOCKER-X.X-RELEASE** ZIP file to the `tak-server` directory.
 
+```
+# Example
+cp ~/Downloads/takserver-docker-5.3.RELEASE-24.zip .
+```
+
 Assuming that your current working directory is the `tak-server` as cloned previously, you can then proceed to run the [setup.sh script](./scripts/setup.sh).
 
 ```bash
